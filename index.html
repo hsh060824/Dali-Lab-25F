@@ -1,17 +1,208 @@
-<!-- Example HTML file used in Module 1: Frontend Basics -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Name</title>
-        <link rel="stylesheet" href="style.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    </head>
-	    <body>
-        <h1 class="header">Oxford commas</h1>
-        <h2 class="header">What are Oxford commas?</h2>
-        <p>The Oxford comma, also known as the serial comma or the Harvard comma, is an essential type of punctuation. They occur immediately before a coordinating conjunction in a list of three or more items. The purpose of an Oxford comma is to provide clarity to a phrase. Its absence can lead to different meanings of sentences&mdash;some of which can have $10 million implications!</p>
-        <img src="https://annhandley.com/ah/wp-content/uploads/2018/02/Oxford-comma-explained.png" id="jfk-stalin-image"/>
-        <script src="main.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seth Han | Technologist & Entrepreneur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="hero" id="top">
+        <nav class="top-nav" aria-label="Primary">
+            <a class="top-nav__logo" href="#top" aria-label="Seth Han home">SH</a>
+            <button class="top-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+                <span class="top-nav__toggle-line"></span>
+                <span class="top-nav__toggle-line"></span>
+                <span class="top-nav__toggle-line"></span>
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <div class="top-nav__links" id="primary-navigation">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Highlights</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero__content">
+            <p class="hero__kicker">Technologist • Entrepreneur • Storyteller</p>
+            <h1>Hi, I’m Seth Han.</h1>
+            <p class="hero__lead">
+                I build intelligent systems that make mobility safer and learning more accessible. From co-founding a drone startup that detects black ice in real time to analyzing edtech data for global learners, I bring curiosity, empathy, and execution to every challenge.
+            </p>
+            <div class="hero__actions">
+                <a class="button" href="#contact">Let’s connect</a>
+                <a class="button button--ghost" href="https://www.linkedin.com/in/seth-han/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section" id="about">
+            <div class="section__header">
+                <h2>About</h2>
+                <p>Inventing safer roads and inclusive learning experiences.</p>
+            </div>
+            <div class="section__content">
+                <p>
+                    I am an undergraduate at Dartmouth College and the Co-founder and Chief Information Officer of Drice, Inc. My work spans drone engineering, geospatial data visualization, and product strategy. I thrive at the intersection of technology and social impact, translating insights into products that serve communities—whether it’s keeping drivers safe on winter roads or empowering slow learners with adaptive games.
+                </p>
+                <ul class="highlight-list">
+                    <li>Led development of a patented black ice detection platform using unmanned aerial vehicles.</li>
+                    <li>Presented edtech research directly to executive leadership teams to inform global product roadmaps.</li>
+                    <li>Earned national recognition across STEM innovation, entrepreneurship, and film storytelling.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section section--accent" id="experience">
+            <div class="section__header">
+                <h2>Experience</h2>
+                <p>Hands-on leadership across startups, research, and data analysis.</p>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <header>
+                        <h3>Drice, Inc.</h3>
+                        <p class="experience-card__role">Co-founder &amp; Chief Information Officer</p>
+                        <p class="experience-card__meta">Nov 2022 – Aug 2025</p>
+                    </header>
+                    <p>Co-led the creation of an intelligent drone system that discovers black ice, alerts drivers in real time, and reduces winter traffic accidents.</p>
+                    <ul>
+                        <li>Architected a patented UAV-based detection method and published real-time inference research.</li>
+                        <li>Coordinated R&amp;D with cross-disciplinary engineers, data scientists, and municipal partners.</li>
+                        <li>Secured $10K+ in government R&amp;D grants and guided product rollout plans.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <header>
+                        <h3>Enuma, Inc.</h3>
+                        <p class="experience-card__role">Data Analyst Intern, CTO Staff</p>
+                        <p class="experience-card__meta">Mar 2025 – Apr 2025</p>
+                    </header>
+                    <p>Translated user log data into actionable insights for global B2G education platforms.</p>
+                    <ul>
+                        <li>Queried and modeled product usage patterns with SQL and Python pipelines.</li>
+                        <li>Advised on curriculum adjustments that improved learner engagement.</li>
+                    </ul>
+                </article>
+                <article class="experience-card">
+                    <header>
+                        <h3>Enuma, Inc.</h3>
+                        <p class="experience-card__role">Research Assistant Intern, CEO Staff</p>
+                        <p class="experience-card__meta">Jan 2024 – Aug 2024</p>
+                    </header>
+                    <p>Explored edtech market signals to steer the development of inclusive English and math experiences.</p>
+                    <ul>
+                        <li>Produced biweekly strategy briefs for the CEO and CPO using competitive and policy analysis.</li>
+                        <li>Contributed to government-certified digital textbooks supporting learners across South Korea.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="education">
+            <div class="section__header">
+                <h2>Education</h2>
+            </div>
+            <div class="section__content">
+                <article class="education-card">
+                    <h3>Dartmouth College</h3>
+                    <p class="education-card__meta">Bachelor of Arts (Undeclared) • Sep 2025 – Present • Hanover, NH</p>
+                    <p>Recipient of the prestigious Presidential Science Scholarship, a full-ride award granted to only 20 students annually by the Korea Student Aid Foundation.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section section--accent" id="achievements">
+            <div class="section__header">
+                <h2>Key Highlights</h2>
+                <p>Recognition for impact, innovation, and creativity.</p>
+            </div>
+            <div class="achievement-grid">
+                <article class="achievement-card">
+                    <h3>Patent</h3>
+                    <ul>
+                        <li><a href="https://patents.google.com/patent/KR102681032B1" target="_blank" rel="noreferrer">Black Ice Identification and Warning System and Method Using Unmanned Aerial Vehicles (KR102681032B1)</a></li>
+                    </ul>
+                </article>
+                <article class="achievement-card">
+                    <h3>Publication</h3>
+                    <ul>
+                        <li><a href="https://doi.org/10.47611/jsrhs.v13i2.6831" target="_blank" rel="noreferrer">Real-Time Black Ice Detection in Drone View Using YOLOX</a>, Journal of Student Research.</li>
+                    </ul>
+                </article>
+                <article class="achievement-card">
+                    <h3>Awards</h3>
+                    <ul>
+                        <li>Regeneron International Science and Engineering Fair (2024) – Society for Science Finalist &amp; National Representative of Korea.</li>
+                        <li>National Science Contest (2024) – Minister of Science &amp; ICT Top 3% &amp; Provincial Representative.</li>
+                        <li>Promising Student Start-up Team 300+ (2022) – Ministry of Education Innovation Award.</li>
+                        <li>Korea Youth Startup Competition (2022) – 2nd Place &amp; Provincial Representative.</li>
+                        <li>BUSAN International Film Festival (2025) – Wide Angle Korean Short Film Competition Selection.</li>
+                    </ul>
+                </article>
+                <article class="achievement-card">
+                    <h3>Organizations &amp; Leadership</h3>
+                    <ul>
+                        <li>Justiz – Co-founder &amp; Chief Strategy Officer (Aug 2023 – Jan 2025). Built NLP tools that empower creators to manage community dialogue and supported international expansion with $10K+ in R&amp;D funding.</li>
+                        <li>Cheongshim Broadcasting Network – President &amp; Engineer (May 2019 – Jan 2025). Directed award-winning productions, grew audiences beyond 400K views, and secured $250K for studio renovation.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="skills">
+            <div class="section__header">
+                <h2>Skills</h2>
+                <p>Technology, storytelling, and cross-cultural collaboration.</p>
+            </div>
+            <div class="skills-grid">
+                <div>
+                    <h3>Programming &amp; Tools</h3>
+                    <ul class="pill-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>Geospatial Visualization</li>
+                        <li>Data Storytelling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Languages</h3>
+                    <ul class="pill-list">
+                        <li>Korean (Native)</li>
+                        <li>Chinese (Basic)</li>
+                        <li>English (Professional)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Focus Areas</h3>
+                    <ul class="pill-list">
+                        <li>Intelligent Mobility</li>
+                        <li>STEM Education</li>
+                        <li>Product Strategy</li>
+                        <li>Community Media</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--cta" id="contact">
+            <div class="section__header">
+                <h2>Let’s Collaborate</h2>
+                <p>Open to conversations about AI safety, edtech innovation, and creative storytelling.</p>
+            </div>
+            <div class="cta-card">
+                <ul class="contact-list">
+                    <li><span class="contact-list__label">Email</span><a href="mailto:seth.s.han.29@dartmouth.edu">seth.s.han.29@dartmouth.edu</a></li>
+                    <li><span class="contact-list__label">Phone</span><a href="tel:+16032765846">+1 (603) 276-5846</a></li>
+                    <li><span class="contact-list__label">LinkedIn</span><a href="https://www.linkedin.com/in/seth-han/" target="_blank" rel="noreferrer">linkedin.com/in/seth-han</a></li>
+                </ul>
+                <p class="cta-card__note">Let’s explore how we can apply emerging technology to create safer, smarter, and more inclusive experiences.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; <span data-year></span> Seth Han. Built with curiosity and purpose.</p>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
 </html>
